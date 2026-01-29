@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="format-detection" content="telephone=no">
+    <title>Gallery - Greenland Academy E.F. Sunsari P.V.T. L.T.D</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;600&display=swap');
+        
+        .gallery-title {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.6s ease-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .gallery-item {
+            transition: all 0.3s ease;
+        }
+        
+        .gallery-item:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-green-50 shadow-lg sticky top-0 z-40 border-b border-green-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <img src="./images/logo.png" alt="Greenland Academy Logo" class="h-10 w-auto mr-3 logo-hover">
+                        <span class="font-bold text-xl text-gray-800">Greenland Academy</span>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="index.html" class="nav-link text-gray-700">
+                        <i class="fas fa-home mr-1"></i>Home
+                    </a>
+                    <a href="index.html#about" class="nav-link text-gray-700">About</a>
+                    <a href="index.html#programs" class="nav-link text-gray-700">Programs</a>
+                    <a href="index.html#faculty" class="nav-link text-gray-700">Faculty</a>
+                    <a href="#" class="nav-link text-green-600 font-semibold">Gallery</a>
+                    <a href="index.html#facilities" class="nav-link text-gray-700">Facilities</a>
+                    <a href="index.html#contact" class="nav-link text-gray-700">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-700 text-white py-20">
+        <div class="absolute inset-0 bg-black opacity-30"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6 gallery-title fade-in">
+                Our School Gallery
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto fade-in" style="animation-delay: 0.2s;">
+                Explore the vibrant life and facilities at Greenland Academy
+            </p>
+        </div>
+    </section>
+
+    <!-- Gallery Filter -->
+    <section class="py-8 bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-wrap justify-center gap-4">
+                <button onclick="filterGallery('all')" class="filter-btn px-6 py-2 rounded-full bg-blue-600 text-white transition duration-300">
+                    <i class="fas fa-th mr-2"></i>All Photos
+                </button>
+                <button onclick="filterGallery('classroom')" class="filter-btn px-6 py-2 rounded-full bg-gray-200 text-gray-700 hover:bg-blue-600 hover:text-white transition duration-300">
+                    <i class="fas fa-chalkboard mr-2"></i>Classrooms
+                </button>
+                <button onclick="filterGallery('science')" class="filter-btn px-6 py-2 rounded-full bg-gray-200 text-gray-700 hover:bg-blue-600 hover:text-white transition duration-300">
+                    <i class="fas fa-flask mr-2"></i>Science Labs
+                </button>
+                <button onclick="filterGallery('library')" class="filter-btn px-6 py-2 rounded-full bg-gray-200 text-gray-700 hover:bg-blue-600 hover:text-white transition duration-300">
+                    <i class="fas fa-book mr-2"></i>Library
+                </button>
+                <button onclick="filterGallery('computer')" class="filter-btn px-6 py-2 rounded-full bg-gray-200 text-gray-700 hover:bg-blue-600 hover:text-white transition duration-300">
+                    <i class="fas fa-laptop mr-2"></i>Computer Lab
+                </button>
+                <button onclick="filterGallery('bus')" class="filter-btn px-6 py-2 rounded-full bg-gray-200 text-gray-700 hover:bg-blue-600 hover:text-white transition duration-300">
+                    <i class="fas fa-bus mr-2"></i>Transportation
+                </button>
+                <button onclick="filterGallery('events')" class="filter-btn px-6 py-2 rounded-full bg-gray-200 text-gray-700 hover:bg-blue-600 hover:text-white transition duration-300">
+                    <i class="fas fa-calendar mr-2"></i>Events
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Gallery -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="galleryGrid">
+                <!-- Gallery Items -->
+                <div class="gallery-item fade-in" data-category="classroom">
+                    <div class="relative overflow-hidden rounded-lg shadow-lg cursor-pointer" onclick="openLightbox('1768635530045.jpg', 'Modern Classroom', 'Interactive learning environment')">
+                        <img src="1768635530045.jpg" alt="Modern Classroom" class="w-full h-64 object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
+                            <div class="p-4 text-white">
+                                <h3 class="font-bold text-lg">Modern Classroom</h3>
+                                <p class="text-sm">Interactive learning environment</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item fade-in" data-category="science">
+                    <div class="relative overflow-hidden rounded-lg shadow-lg cursor-pointer" onclick="openLightbox('science-lab.jpg', 'Science Laboratory', 'Well-equipped science labs')">
+                        <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=400&h=300&fit=crop" alt="Science Lab" class="w-full h-64 object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
+                            <div class="p-4 text-white">
+                                <h3 class="font-bold text-lg">Science Laboratory</h3>
+                                <p class="text-sm">Well-equipped science labs</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item fade-in" data-category="library">
+                    <div class="relative overflow-hidden rounded-lg shadow-lg cursor-pointer" onclick="openLightbox('1768635470676.jpg', 'School Library', 'Extensive collection of books')">
+                        <img src="1768635470676.jpg" alt="Library" class="w-full h-64 object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
+                            <div class="p-4 text-white">
+                                <h3 class="font-bold text-lg">School Library</h3>
+                                <p class="text-sm">Extensive collection of books</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item fade-in" data-category="computer">
+                    <div class="relative overflow-hidden rounded-lg shadow-lg cursor-pointer" onclick="openLightbox('computer-lab.jpg', 'Computer Lab', 'Modern computing facilities')">
+                        <img src="https://images.unsplash.com/photo-1517077304086-70eeebd86cc0?w=400&h=300&fit=crop" alt="Computer Lab" class="w-full h-64 object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
+                            <div class="p-4 text-white">
+                                <h3 class="font-bold text-lg">Computer Lab</h3>
+                                <p class="text-sm">Modern computing facilities</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item fade-in" data-category="bus">
+                    <div class="relative overflow-hidden rounded-lg shadow-lg cursor-pointer" onclick="openLightbox('bus-facility.jpg', 'School Bus', 'Safe transportation services')">
+                        <img src="https://images.unsplash.com/photo-1544620394-9a22b2d1d5f7?w=400&h=300&fit=crop" alt="School Bus" class="w-full h-64 object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
+                            <div class="p-4 text-white">
+                                <h3 class="font-bold text-lg">School Bus</h3>
+                                <p class="text-sm">Safe transportation services</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item fade-in" data-category="events">
+                    <div class="relative overflow-hidden rounded-lg shadow-lg cursor-pointer" onclick="openLightbox('school-event.jpg', 'School Event', 'Annual school celebration')">
+                        <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=400&h=300&fit=crop" alt="School Event" class="w-full h-64 object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
+                            <div class="p-4 text-white">
+                                <h3 class="font-bold text-lg">School Event</h3>
+                                <p class="text-sm">Annual school celebration</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item fade-in" data-category="classroom">
+                    <div class="relative overflow-hidden rounded-lg shadow-lg cursor-pointer" onclick="openLightbox('classroom2.jpg', 'Smart Classroom', 'Technology-enabled learning')">
+                        <img src="https://images.unsplash.com/photo-1581078426770-6b3a4b8c8c8a?w=400&h=300&fit=crop" alt="Smart Classroom" class="w-full h-64 object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
+                            <div class="p-4 text-white">
+                                <h3 class="font-bold text-lg">Smart Classroom</h3>
+                                <p class="text-sm">Technology-enabled learning</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item fade-in" data-category="events">
+                    <div class="relative overflow-hidden rounded-lg shadow-lg cursor-pointer" onclick="openLightbox('sports-day.jpg', 'Sports Day', 'Annual sports competition')">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop" alt="Sports Day" class="w-full h-64 object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
+                            <div class="p-4 text-white">
+                                <h3 class="font-bold text-lg">Sports Day</h3>
+                                <p class="text-sm">Annual sports competition</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="fixed inset-0 bg-black bg-opacity-90 z-50 hidden flex items-center justify-center p-4">
+        <button onclick="closeLightbox()" class="absolute top-4 right-4 text-white text-3xl hover:text-gray-300 transition duration-300 z-50">
+            <i class="fas fa-times"></i>
+        </button>
+        <div class="max-w-6xl max-h-full flex items-center justify-center">
+            <img id="lightboxImage" src="" alt="" class="max-w-full max-h-full object-contain rounded-lg">
+        </div>
+        <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-white text-center">
+            <h3 id="lightboxTitle" class="text-xl font-semibold mb-1"></h3>
+            <p id="lightboxDescription" class="text-sm text-gray-300"></p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <p>&copy; 2024 Greenland Academy E.F. Sunsari P.V.T. L.T.D. All rights reserved.</p>
+                <p class="mt-2 text-gray-400">Empowering students to reach their full potential</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Get URL parameters
+        function getUrlParameter(name) {
+            name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+            var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+            var results = regex.exec(location.search);
+            return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+        }
+
+        // Gallery Filter Function
+        function filterGallery(category) {
+            const items = document.querySelectorAll('.gallery-item');
+            const buttons = document.querySelectorAll('.filter-btn');
+            
+            // Update button states
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-blue-600', 'text-white');
+                btn.classList.add('bg-gray-200', 'text-gray-700');
+            });
+            
+            // Find and update the clicked button
+            const clickedBtn = Array.from(buttons).find(btn => 
+                btn.textContent.toLowerCase().includes(category.toLowerCase()) || 
+                (category === 'all' && btn.textContent.includes('All Photos'))
+            );
+            
+            if (clickedBtn) {
+                clickedBtn.classList.remove('bg-gray-200', 'text-gray-700');
+                clickedBtn.classList.add('bg-blue-600', 'text-white');
+            }
+            
+            // Filter items
+            items.forEach(item => {
+                if (category === 'all' || item.dataset.category === category) {
+                    item.style.display = 'block';
+                    setTimeout(() => {
+                        item.style.opacity = '1';
+                        item.style.transform = 'scale(1)';
+                    }, 100);
+                } else {
+                    item.style.opacity = '0';
+                    item.style.transform = 'scale(0.8)';
+                    setTimeout(() => {
+                        item.style.display = 'none';
+                    }, 300);
+                }
+            });
+        }
+
+        // Auto-filter on page load based on URL parameter
+        window.addEventListener('load', function() {
+            const facility = getUrlParameter('facility');
+            if (facility) {
+                setTimeout(() => {
+                    filterGallery(facility);
+                }, 500);
+            }
+        });
+
+        // Lightbox Functions
+        function openLightbox(imageSrc, title, description) {
+            const lightbox = document.getElementById('lightbox');
+            const image = document.getElementById('lightboxImage');
+            const titleElement = document.getElementById('lightboxTitle');
+            const descElement = document.getElementById('lightboxDescription');
+            
+            image.src = imageSrc;
+            titleElement.textContent = title;
+            descElement.textContent = description;
+            
+            lightbox.classList.remove('hidden');
+            lightbox.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.classList.add('hidden');
+            lightbox.classList.remove('flex');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close lightbox on escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+
+        // Close lightbox on background click
+        document.getElementById('lightbox').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeLightbox();
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="format-detection" content="telephone=no">
+    <title>Greenland Academy E.F. Sunsari P.V.T. L.T.D - Excellence in Education</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="security-client.js"></script>
+</head>
+<body class="bg-gray-50 safe-area-top safe-area-bottom">
+    <!-- Navigation -->
+    <nav class="bg-green-50 shadow-lg sticky top-0 z-50 border-b border-green-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <img src="School Logo.jpg" alt="Greenland Academy Logo" class="h-10 w-auto mr-3 logo-hover">
+                                            <img src="greenland.png" alt="Greenland Academy Logo" class="h-10 w-auto mr-3 logo-hover">
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="#home" class="nav-link text-gray-700">Home</a>
+                    <a href="#about" class="nav-link text-gray-700">About</a>
+                    <a href="#programs" class="nav-link text-gray-700">Programs</a>
+                    <a href="#faculty" class="nav-link text-gray-700">Faculty</a>
+                    <a href="#gallery" class="nav-link text-gray-700">Gallery</a>
+                    <a href="#facilities" class="nav-link text-gray-700">Facilities</a>
+                    <a href="#contact" class="nav-link text-gray-700">Contact</a>
+                    <button onclick="handleEnrollmentAction()" class="enroll-btn bg-gradient-to-r from-green-600 to-green-700 text-white px-6 py-3 rounded-lg ml-4 relative overflow-hidden group">
+                        <span class="relative z-10 flex items-center">
+                            <i class="fas fa-user-plus mr-2 group-hover:rotate-12 transition-transform duration-300"></i>
+                            <span class="font-semibold">Enroll Now</span>
+                        </span>
+                    </button>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-green-600">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-green-50 border-t border-green-200">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="mobile-nav-link block px-3 py-2 text-gray-700">Home</a>
+                <a href="#about" class="mobile-nav-link block px-3 py-2 text-gray-700">About</a>
+                <a href="#programs" class="mobile-nav-link block px-3 py-2 text-gray-700">Programs</a>
+                <a href="#faculty" class="mobile-nav-link block px-3 py-2 text-gray-700">Faculty</a>
+                <a href="#gallery" class="mobile-nav-link block px-3 py-2 text-gray-700">Gallery</a>
+                <a href="#facilities" class="mobile-nav-link block px-3 py-2 text-gray-700">Facilities</a>
+                <a href="#contact" class="mobile-nav-link block px-3 py-2 text-gray-700">Contact</a>
+                <div class="pt-3 mt-3 border-t border-green-200">
+                    <button onclick="handleEnrollmentAction()" class="enroll-btn w-full bg-gradient-to-r from-green-600 to-green-700 text-white px-4 py-3 rounded-lg relative overflow-hidden group">
+                        <span class="relative z-10 flex items-center justify-center">
+                            <i class="fas fa-user-plus mr-2 group-hover:rotate-12 transition-transform duration-300"></i>
+                            <span class="font-semibold">Enroll Now</span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative text-white overflow-hidden">
+        <div class="absolute inset-0">
+            <!-- Background Image -->
+            <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image: url('./images/home-background.jpg');"></div>
+            <!-- Overlay Gradients -->
+            <div class="absolute inset-0 bg-gradient-to-br from-green-900 via-emerald-900 to-teal-900 opacity-85"></div>
+            <div class="absolute inset-0 bg-black opacity-40"></div>
+            <!-- Animated Elements -->
+            <div class="absolute inset-0">
+                <div class="absolute top-0 left-0 w-96 h-96 bg-green-400 rounded-full filter blur-3xl opacity-20 animate-float"></div>
+                <div class="absolute bottom-0 right-0 w-96 h-96 bg-emerald-400 rounded-full filter blur-3xl opacity-20 animate-float" style="animation-delay: 2s;"></div>
+                <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-teal-400 rounded-full filter blur-3xl opacity-10 animate-pulse-slow"></div>
+            </div>
+        </div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 animate-fade-in hero-title">
+                    Welcome to <span class="text-gradient-animate">Greenland Academy</span> E.F. Sunsari P.V.T. L.T.D
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto hero-subtitle">
+                    Where excellence meets opportunity. Nurturing young minds for a brighter tomorrow.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button onclick="scrollToSection('about')" class="btn-primary bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+                        <i class="fas fa-info-circle mr-2"></i>Learn More
+                    </button>
+                    <button onclick="scrollToSection('gallery')" class="btn-secondary border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+                        <i class="fas fa-images mr-2"></i>Take a Tour
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">About Our School</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">25 Years of Educational Excellence</h3>
+                    <p class="text-gray-600 mb-6">
+                        At Greenland Academy E.F. Sunsari P.V.T. L.T.D, we believe in providing quality education that prepares students for the challenges of tomorrow. Our comprehensive curriculum combines academic rigor with character development.
+                    </p>
+                    <p class="text-gray-600 mb-6">
+                        We foster a learning environment where students are encouraged to explore, question, and innovate. Our dedicated faculty ensures each child receives personalized attention to reach their full potential.
+                    </p>
+                    <div class="grid grid-cols-3 gap-4 text-center">
+                        <div class="bg-blue-50 p-4 rounded-lg stat-card">
+                            <div class="text-3xl font-bold text-blue-600 stat-number" data-target="500">0</div>
+                            <div class="text-gray-600">Students</div>
+                        </div>
+                        <div class="bg-green-50 p-4 rounded-lg stat-card">
+                            <div class="text-3xl font-bold text-green-600 stat-number" data-target="20">0</div>
+                            <div class="text-gray-600">Teachers</div>
+                        </div>
+                        <div class="bg-purple-50 p-4 rounded-lg stat-card">
+                            <div class="text-3xl font-bold text-purple-600 stat-number" data-target="26">0</div>
+                            <div class="text-gray-600">Years</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="Schhol.jpeg" alt="School Building" class="rounded-lg shadow-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Principal Section -->
+    <section class="py-16 bg-gradient-to-br from-blue-50 to-purple-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Message From Our Principal</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-1/3 bg-gradient-to-br from-blue-600 to-purple-600 p-8 flex flex-col items-center justify-center text-white">
+                        <div class="relative mb-6">
+                            <img src="principal.jpeg" 
+                                 alt="Principal" 
+                                 class="w-48 h-48 rounded-full border-4 border-white shadow-2xl object-cover">
+                            <div class="absolute -bottom-2 -right-2 bg-yellow-400 text-gray-800 rounded-full p-3 shadow-lg">
+                                <i class="fas fa-award text-2xl"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2">D.L Yadav</h3>
+                        <p class="text-blue-100 mb-4">Principal</p>
+                        <div class="flex space-x-3">
+                            <a href="#" class="bg-white/20 hover:bg-white/30 p-2 rounded-full transition duration-300">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="mailto:dlyadav345677@gmail.com" class="bg-white/20 hover:bg-white/30 p-2 rounded-full transition duration-300">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a href="tel:+9779842155795" class="bg-white/20 hover:bg-white/30 p-2 rounded-full transition duration-300" title="Primary: +9779842155795, Secondary: +9779819304211">
+                                <i class="fas fa-phone"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="md:w-2/3 p-8 md:p-12">
+                        <div class="mb-6">
+                            <div class="flex items-center mb-4">
+                                <i class="fas fa-quote-left text-blue-600 text-2xl mr-3"></i>
+                                <h4 class="text-xl font-semibold text-gray-800">Educational Philosophy</h4>
+                            </div>
+                            <p class="text-gray-600 leading-relaxed mb-4">
+                                At Greenland Academy, we believe that education is not just about imparting knowledge but about nurturing curiosity, 
+                                fostering creativity, and building character. Our mission is to create a learning environment where every student 
+                                feels valued, challenged, and inspired to reach their full potential.
+                            </p>
+                            <p class="text-gray-600 leading-relaxed">
+                                With over 25 years of experience in educational leadership, I am committed to ensuring that our academy 
+                                continues to be a beacon of excellence in education, preparing students not just for exams, but for life.
+                            </p>
+                        </div>
+                        
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+                            <div class="text-center p-3 bg-blue-50 rounded-lg">
+                                <div class="text-2xl font-bold text-blue-600">25+</div>
+                                <div class="text-sm text-gray-600">Years Experience</div>
+                            </div>
+                            <div class="text-center p-3 bg-green-50 rounded-lg">
+                                <div class="text-2xl font-bold text-green-600">B.Ed</div>
+                                <div class="text-sm text-gray-600">Education</div>
+                            </div>
+                            <div class="text-center p-3 bg-purple-50 rounded-lg">
+                                <div class="text-2xl font-bold text-purple-600">15+</div>
+                                <div class="text-sm text-gray-600">Awards</div>
+                            </div>
+                            <div class="text-center p-3 bg-orange-50 rounded-lg">
+                                <div class="text-2xl font-bold text-orange-600">500+</div>
+                                <div class="text-sm text-gray-600">Publications</div>
+                            </div>
+                        </div>
+                        
+                        
+                            <div class="text-right">
+                                <p class="text-sm text-gray-500">Available for</p>
+                                <p class="font-semibold text-gray-700">Parent Consultations</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section id="programs" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Programs</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                    <div class="bg-gradient-to-r from-blue-500 to-blue-600 p-6 text-white">
+                        <i class="fas fa-child text-4xl mb-4"></i>
+                        <h3 class="text-xl font-bold">Elementary School</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">
+                            Building strong foundations with interactive learning and creative exploration for grades K-5.
+                        </p>
+                        <ul class="text-gray-600 space-y-2">
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>STEM Education</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Arts & Music</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Sports Activities</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                    <div class="bg-gradient-to-r from-purple-500 to-purple-600 p-6 text-white">
+                        <i class="fas fa-book text-4xl mb-4"></i>
+                        <h3 class="text-xl font-bold">Middle School</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">
+                            Bridging childhood and adolescence with challenging academics and personal growth for nursery to class 10.
+                        </p>
+                        <ul class="text-gray-600 space-y-2">
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Advanced Curriculum</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Leadership Programs</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Technology Integration</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                    <div class="bg-gradient-to-r from-green-500 to-green-600 p-6 text-white">
+                        <i class="fas fa-graduation-cap text-4xl mb-4"></i>
+                        <h3 class="text-xl font-bold">High School</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">
+                            Preparing students for college and career success with rigorous academics and real-world experience.
+                        </p>
+                        <ul class="text-gray-600 space-y-2">
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>AP Courses</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>College Counseling</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Internship Programs</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Faculty Section -->
+    <section id="faculty" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Dedicated Faculty</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
+                    Meet our team of experienced educators who are committed to nurturing young minds and shaping the future of our students.
+                </p>
+            </div>
+            
+            <div class="faculty-grid">
+                <div class="faculty-card">
+                    <img src="principal.jpeg" alt="D.L Yadav - Principal" class="faculty-avatar-img">
+                    <h4>D.L Yadav</h4>
+                    <p class="faculty-position">Principal</p>
+                    <p class="faculty-qualification">B.Ed, 25 years experience</p>
+                    <p class="faculty-specialty">Educational Leadership</p>
+                </div>
+                <div class="faculty-card">
+                    <img src="accountant.jpeg" alt="D.L Yadav - Principal" class="faculty-avatar-img">
+                    <h4>Chandrakant Yadav</h4>
+                    <p class="faculty-position">Accountant</p>
+                    <p class="faculty-qualification">B.B.A, 15 years experience</p>
+                    <p class="faculty-specialty">Science Education</p>
+                </div>
+                <div class="faculty-card">
+                    <div class="faculty-avatar">👨‍🏫</div>
+                    <h4>Dhrub Narayan Mandal</h4>
+                    <p class="faculty-position">English Teacher</p>
+                    <p class="faculty-qualification">M.A. English, 22 years experience</p>
+                    <p class="faculty-specialty">Literature & Writing</p>
+                </div>
+                <div class="faculty-card">
+                    <img src="umesh ram.jpeg" alt="D.L Yadav - Principal" class="faculty-avatar-img">
+                    <h4>Umesh Ram</h4>
+                    <p class="faculty-position">Mathematics Teacher</p>
+                    <p class="faculty-qualification">B.Sc. Mathematics, 10 years experience</p>
+                    <p class="faculty-specialty">Applied Mathematics</p>
+                </div>
+                <div class="faculty-card">
+                    <div class="faculty-avatar">👨‍🏫</div>
+                    <h4>Maha Shankar </h4>
+                    <p class="faculty-position">Science Teacher</p>
+                    <p class="faculty-qualification">M.Sc. Chemistry, 12 years experience</p>
+                    <p class="faculty-specialty">Chemistry & Biology</p>
+                </div>
+                
+                <div class="faculty-card">
+                    <img src="umesh.jpeg" alt="D.L Yadav - Principal" class="faculty-avatar-img">
+                    <h4>Umesh Yadav</h4>
+                    <p class="faculty-position">Social Studies Teacher</p>
+                    <p class="faculty-qualification">B.S.S. History, 18 years experience</p>
+                    <p class="faculty-specialty">History & Geography</p>
+                </div>
+                <div class="faculty-card">
+                    
+                    <img src="Roni.jpeg" alt="Roni Sah - Primary Teacher" class="faculty-avatar-img">
+
+                    <h4>Roni Sah</h4>
+                    <p class="faculty-position">Primary Teacher</p>
+                    <p class="faculty-qualification">B.B.S. 9 years experience</p>
+                    <p class="faculty-specialty">Early Childhood Education</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Gallery</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
+                    Explore the vibrant life and learning experiences at Greenland Academy through our collection of memorable moments.
+                </p>
+            </div>
+            <!-- Gallery Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                <!-- Gallery Item 1 -->
+                <div class="gallery-item classroom relative overflow-hidden rounded-lg shadow-lg card-hover cursor-pointer" data-category="classroom" onclick="openLightbox(0)">
+                    <img src="1768635530045.jpg" alt="Modern Classroom" class="w-full h-64 object-cover pointer-events-none">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
+                        <div class="p-4 text-white">
+                            <h3 class="font-bold text-lg">Tour of our school</h3>
+                            <p class="text-sm">Interactive learning environment</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 2 -->
+                <div class="gallery-item events relative overflow-hidden rounded-lg shadow-lg card-hover cursor-pointer" data-category="events" onclick="openLightbox(1)">
+                    <img src="1768635506880.jpg" alt="Annual Function" class="w-full h-64 object-cover pointer-events-none">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
+                        <div class="p-4 text-white">
+                            <h3 class="font-bold text-lg">Annual Function</h3>
+                            <p class="text-sm">Cultural celebration and performances</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 3 -->
+                <div class="gallery-item sports relative overflow-hidden rounded-lg shadow-lg card-hover cursor-pointer" data-category="sports" onclick="openLightbox(2)">
+                    <img src="1768635502204.jpg" alt="Sports Day" class="w-full h-64 object-cover pointer-events-none">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
+                        <div class="p-4 text-white">
+                            <h3 class="font-bold text-lg">Sports Day</h3>
+                            <p class="text-sm">Athletic competitions and teamwork</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 4 -->
+                <div class="gallery-item facilities relative overflow-hidden rounded-lg shadow-lg card-hover cursor-pointer" data-category="facilities" onclick="openLightbox(3)">
+                    <img src="1768635497591.jpg" alt="Science Laboratory" class="w-full h-64 object-cover pointer-events-none">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
+                        <div class="p-4 text-white">
+                            <h3 class="font-bold text-lg">Science Laboratory</h3>
+                            <p class="text-sm">Well-equipped modern labs</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 5 -->
+                <div class="gallery-item classroom relative overflow-hidden rounded-lg shadow-lg card-hover cursor-pointer" data-category="classroom" onclick="openLightbox(4)">
+                    <img src="1768635470676.jpg" alt="Library" class="w-full h-64 object-cover pointer-events-none">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
+                        <div class="p-4 text-white">
+                            <h3 class="font-bold text-lg">Picnic</h3>
+                            <p class="text-sm">Quiet study and reading space</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 6 -->
+                <div class="gallery-item events relative overflow-hidden rounded-lg shadow-lg card-hover cursor-pointer" data-category="events" onclick="openLightbox(5)">
+                    <img src="1768635452419.jpg" alt="Graduation Ceremony" class="w-full h-64 object-cover pointer-events-none">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
+                        <div class="p-4 text-white">
+                            <h3 class="font-bold text-lg">Graduation Ceremony</h3>
+                            <p class="text-sm">Celebrating student achievements</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 7 -->
+                <div class="gallery-item sports relative overflow-hidden rounded-lg shadow-lg card-hover cursor-pointer" data-category="sports" onclick="openLightbox(6)">
+                    <img src="1768582634606.jpg" alt="Basketball Court" class="w-full h-64 object-cover pointer-events-none">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
+                        <div class="p-4 text-white">
+                            <h3 class="font-bold text-lg">Price Disribution</h3>
+                            <p class="text-sm">price facilities</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 8 -->
+                <div class="gallery-item facilities relative overflow-hidden rounded-lg shadow-lg card-hover cursor-pointer" data-category="facilities" onclick="openLightbox(7)">
+                    <img src="1768582378640.jpg" alt="Computer Lab" class="w-full h-64 object-cover pointer-events-none">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
+                        <div class="p-4 text-white">
+                            <h3 class="font-bold text-lg">Available Bus</h3>
+                            <p class="text-sm">Easy for students</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- View More Button -->
+            <div class="text-center mt-12">
+                <button onclick="toggleGalleryView()" id="viewMoreBtn" class="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-300 transform hover:scale-105">
+                    <i class="fas fa-images mr-2"></i>View More Photos
+                </button>
+            </div>
+            
+            <!-- Hidden Gallery Items (Initially Hidden) -->
+            <div id="hiddenGalleryItems" class="hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mt-6">
+                <!-- Gallery Item 9 -->
+                <div class="gallery-item classroom relative overflow-hidden rounded-lg shadow-lg card-hover cursor-pointer" data-category="classroom" onclick="openLightbox(8)">
+                    <img src="1768582392651.jpg" alt="Science Classroom" class="w-full h-64 object-cover pointer-events-none">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
+                        <div class="p-4 text-white">
+                            <h3 class="font-bold text-lg">Science Classroom</h3>
+                            <p class="text-sm">Hands-on learning space</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 10 -->
+                <div class="gallery-item events relative overflow-hidden rounded-lg shadow-lg card-hover cursor-pointer" data-category="events" onclick="openLightbox(9)">
+                    <img src="1768582381995.jpg" alt="Biology Class" class="w-full h-64 object-cover pointer-events-none">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
+                        <div class="p-4 text-white">
+                            <h3 class="font-bold text-lg">Biology class</h3>
+                            <p class="text-sm">Celebrating diversity</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 11 -->
+                <div class="gallery-item sports relative overflow-hidden rounded-lg shadow-lg card-hover cursor-pointer" data-category="sports" onclick="openLightbox(10)">
+                    <img src="1768635377318.jpg" alt="Football Field" class="w-full h-64 object-cover pointer-events-none">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
+                        <div class="p-4 text-white">
+                            <h3 class="font-bold text-lg">Sarswati Puja</h3>
+                            <p class="text-sm">We are enjoying</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 12 -->
+                <div class="gallery-item facilities relative overflow-hidden rounded-lg shadow-lg card-hover cursor-pointer" data-category="facilities" onclick="openLightbox(11)">
+                    <img src="1768635420033.jpg" class="w-full h-64 object-cover pointer-events-none">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
+                        <div class="p-4 text-white">
+                            <h3 class="font-bold text-lg">School Auditorium</h3>
+                            <p class="text-sm">Assembly and events hall</p>
+                        </div>
+                    </div>
+                </div>
+                                <!-- Gallery Item 13 -->
+                <div class="gallery-item facilities relative overflow-hidden rounded-lg shadow-lg card-hover cursor-pointer" data-category="facilities" onclick="openLightbox(11)">
+                    <img src="8 class .jpeg" class="w-full h-64 object-cover pointer-events-none">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
+                        <div class="p-4 text-white">
+                            <h3 class="font-bold text-lg">Educational Tour</h3>
+                            <p class="text-sm"></p>
+                        </div>
+                    </div>
+                </div>
+                      <!-- Gallery Item 14 -->
+                <div class="gallery-item facilities relative overflow-hidden rounded-lg shadow-lg card-hover cursor-pointer" data-category="facilities" onclick="openLightbox(11)">
+                    <img src="aarti group.jpeg" class="w-full h-64 object-cover pointer-events-none">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
+                        <div class="p-4 text-white">
+                            <h3 class="font-bold text-lg">2080 SEE Batch</h3>
+                            <p class="text-sm"></p>
+                        </div>
+                    </div>
+                </div>
+                 
+                     <!-- Gallery Item 15 -->
+                <div class="gallery-item facilities relative overflow-hidden rounded-lg shadow-lg card-hover cursor-pointer" data-category="facilities" onclick="openLightbox(11)">
+                    <img src="new sar.jpeg" class="w-full h-64 object-cover pointer-events-none">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
+                        <div class="p-4 text-white">
+                            <h3 class="font-bold text-lg">Sarswati Puja-2082</h3>
+                            <p class="text-sm"></p>
+                </div>
+            </div>
+        </div>
+         <!-- Gallery Item 16 -->
+                <div class="gallery-item facilities relative overflow-hidden rounded-lg shadow-lg card-hover cursor-pointer" data-category="facilities" onclick="openLightbox(11)">
+                    <img src="8 group.jpeg" class="w-full h-64 object-cover pointer-events-none">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
+                        <div class="p-4 text-white">
+                            <h3 class="font-bold text-lg">Educational Tour</h3>
+                            <p class="text-sm"></p>
+    </section>
+
+    <!-- Image Lightbox Modal -->
+    <div id="imageLightbox" class="fixed inset-0 bg-black bg-opacity-95 z-50 hidden flex items-center justify-center p-4">
+        <button onclick="closeLightbox()" class="absolute top-4 right-4 text-white text-3xl hover:text-gray-300 transition duration-300 z-50">
+            <i class="fas fa-times"></i>
+        </button>
+        <button onclick="navigateLightbox('prev')" class="absolute left-4 top-1/2 transform -translate-y-1/2 text-white text-3xl hover:text-gray-300 transition duration-300 z-50">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button onclick="navigateLightbox('next')" class="absolute right-4 top-1/2 transform -translate-y-1/2 text-white text-3xl hover:text-gray-300 transition duration-300 z-50">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        <div class="max-w-6xl max-h-full flex items-center justify-center">
+            <img id="lightboxImage" src="" alt="" class="max-w-full max-h-full object-contain rounded-lg">
+        </div>
+        <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-white text-center">
+            <h3 id="lightboxTitle" class="text-xl font-semibold mb-1"></h3>
+            <p id="lightboxDescription" class="text-sm text-gray-300"></p>
+        </div>
+    </div>
+
+    <!-- Facilities Section -->
+    <section id="facilities" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Facilities</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div onclick="scrollToGallery('science')" class="text-center cursor-pointer transform hover:scale-105 transition-all duration-300 group">
+                    <div class="bg-blue-100 rounded-full p-6 w-24 h-24 mx-auto mb-4 flex items-center justify-center group-hover:bg-blue-200 transition-colors duration-300">
+                        <i class="fas fa-flask text-blue-600 text-3xl group-hover:text-blue-700 transition-colors duration-300"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-800 mb-2 group-hover:text-blue-600 transition-colors duration-300">Science Labs</h3>
+                    <p class="text-gray-600 text-sm">Modern laboratories for hands-on scientific exploration</p>
+                </div>
+                <div onclick="scrollToGallery('library')" class="text-center cursor-pointer transform hover:scale-105 transition-all duration-300 group">
+                    <div class="bg-green-100 rounded-full p-6 w-24 h-24 mx-auto mb-4 flex items-center justify-center group-hover:bg-green-200 transition-colors duration-300">
+                        <i class="fas fa-book-open text-green-600 text-3xl group-hover:text-green-700 transition-colors duration-300"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-800 mb-2 group-hover:text-green-600 transition-colors duration-300">Library</h3>
+                    <p class="text-gray-600 text-sm">Extensive collection of books and digital resources</p>
+                </div>
+                <div onclick="scrollToGallery('bus')" class="text-center cursor-pointer transform hover:scale-105 transition-all duration-300 group">
+                    <div class="bg-purple-100 rounded-full p-6 w-24 h-24 mx-auto mb-4 flex items-center justify-center group-hover:bg-purple-200 transition-colors duration-300">
+                        <i class="fas fa-running text-purple-600 text-3xl group-hover:text-purple-700 transition-colors duration-300"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-800 mb-2 group-hover:text-purple-600 transition-colors duration-300">Bus Facilities</h3>
+                    <p class="text-gray-600 text-sm">The bus offers well-organized bus facilities for students from different location.</p>
+                </div>
+                <div onclick="scrollToGallery('computer')" class="text-center cursor-pointer transform hover:scale-105 transition-all duration-300 group">
+                    <div class="bg-orange-100 rounded-full p-6 w-24 h-24 mx-auto mb-4 flex items-center justify-center group-hover:bg-orange-200 transition-colors duration-300">
+                        <i class="fas fa-laptop text-orange-600 text-3xl group-hover:text-orange-700 transition-colors duration-300"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-800 mb-2 group-hover:text-orange-600 transition-colors duration-300">Computer Lab</h3>
+                    <p class="text-gray-600 text-sm">State-of-the-art technology and computing resources</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Get in Touch</h2>
+                <div class="w-24 h-1 bg-white mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-2xl mr-4"></i>
+                            <div>
+                                <p class="font-semibold">Address</p>
+                                <p>Laukahi-1 Sunsari, Nepal</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-phone text-2xl mr-4"></i>
+                            <div>
+                                <p class="font-semibold">Phone</p>
+                                <p>9819304211 / 9842155795</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope text-2xl mr-4"></i>
+                            <div>
+                                <p class="font-semibold">Email</p>
+                                <p>greenlandacademy12345@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <h4 class="font-bold mb-4">Follow Us</h4>
+                        <div class="flex space-x-4">
+                            <a href="https://www.facebook.com/share/1G5pjuhisP/" target="_blank" class="bg-white text-blue-600 p-3 rounded-full hover:bg-gray-100 transition duration-300">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.tiktok.com/@greenland.academy6?_r=1&_t=ZS-93TgZKRcZmS" target="_blank" class="bg-white text-black p-3 rounded-full hover:bg-gray-100 transition duration-300">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                            <a href="#" class="bg-white text-blue-600 p-3 rounded-full hover:bg-gray-100 transition duration-300">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="bg-white text-blue-600 p-3 rounded-full hover:bg-gray-100 transition duration-300">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mt-6">
+                        <a href="https://maps.app.goo.gl/RkLtdL4hUwyAVrh26" target="_blank" class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-green-600 to-green-700 text-white font-medium rounded-full hover:from-green-700 hover:to-green-800 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+                            <svg class="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                            </svg>
+                            <span class="font-google-sans">View on Google Maps</span>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold mb-6">Send us a Message</h3>
+                    <form id="contact-form" class="space-y-4" action="https://api.greenlandacademy.com/api/contact" method="POST" onsubmit="return validateAndSubmitForm(event)">
+                        <div>
+                            <label class="block text-white font-semibold mb-2">Your Name *</label>
+                            <input type="text" name="name" required placeholder="Your Name" class="w-full px-4 py-3 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-white">
+                        </div>
+                        <div>
+                            <label class="block text-white font-semibold mb-2">Your Email *</label>
+                            <input type="email" name="email" required placeholder="Your Email" class="w-full px-4 py-3 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-white">
+                        </div>
+                        <div>
+                            <label class="block text-white font-semibold mb-2">Phone Number</label>
+                            <input type="tel" name="phone" placeholder="Your Phone Number" class="w-full px-4 py-3 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-white">
+                        </div>
+                        <div>
+                            <label class="block text-white font-semibold mb-2">Subject</label>
+                            <input type="text" name="subject" placeholder="Subject" class="w-full px-4 py-3 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-white">
+                        </div>
+                        <div>
+                            <label class="block text-white font-semibold mb-2">Your Message *</label>
+                            <textarea name="message" required rows="4" placeholder="Your Message" class="w-full px-4 py-3 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-white"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300">
+                            <i class="fas fa-paper-plane mr-2"></i>Send Message
+                        </button>
+                    </form>
+                    <div id="form-message" class="mt-4 p-4 rounded-lg hidden"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <p>&copy; 2024 Greenland Academy E.F. Sunsari P.V.T. L.T.D. All rights reserved.</p>
+                <p class="mt-2 text-gray-400">Empowering students to reach their full potential</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Enrollment Section -->
+    <section id="enrollmentSection" class="hidden py-20 bg-gradient-to-br from-blue-50 to-purple-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                    <i class="fas fa-graduation-cap mr-3 text-blue-600"></i>Enroll at Greenland Academy
+                </h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
+                    Give your child the gift of quality education. Fill out the form below to start their journey with us.
+                </p>
+            </div>
+            
+            <form id="enrollmentForm" class="bg-white rounded-2xl shadow-xl p-8 space-y-6">
+                <!-- Student Information -->
+                <div class="bg-blue-50 p-6 rounded-lg">
+                    <h4 class="font-bold text-blue-800 mb-4">
+                        <i class="fas fa-user-graduate mr-2"></i>Student Information
+                    </h4>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Full Name *</label>
+                            <input type="text" name="studentName" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Date of Birth *</label>
+                            <input type="date" name="dateOfBirth" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Gender *</label>
+                            <select name="gender" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                                <option value="">Select Gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Grade Applying For *</label>
+                            <select name="grade" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                                <option value="">Select Grade</option>
+                                <option value="nursery">Nursery</option>
+                                <option value="lkg">LKG</option>
+                                <option value="ukg">UKG</option>
+                                <option value="1">Class 1</option>
+                                <option value="2">Class 2</option>
+                                <option value="3">Class 3</option>
+                                <option value="4">Class 4</option>
+                                <option value="5">Class 5</option>
+                                <option value="6">Class 6</option>
+                                <option value="7">Class 7</option>
+                                <option value="8">Class 8</option>
+                                <option value="9">Class 9</option>
+                                <option value="10">Class 10</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Parent/Guardian Information -->
+                <div class="bg-green-50 p-6 rounded-lg">
+                    <h4 class="font-bold text-green-800 mb-4">
+                        <i class="fas fa-user-friends mr-2"></i>Parent/Guardian Information
+                    </h4>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Parent/Guardian Name *</label>
+                            <input type="text" name="parentName" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Relationship *</label>
+                            <select name="relationship" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                                <option value="">Select Relationship</option>
+                                <option value="father">Father</option>
+                                <option value="mother">Mother</option>
+                                <option value="guardian">Guardian</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Phone Number *</label>
+                            <input type="tel" name="phone" required placeholder="+9779819304211" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Email Address *</label>
+                            <input type="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Address Information -->
+                <div class="bg-purple-50 p-6 rounded-lg">
+                    <h4 class="font-bold text-purple-800 mb-4">
+                        <i class="fas fa-home mr-2"></i>Address Information
+                    </h4>
+                    <div class="space-y-4">
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Complete Address *</label>
+                            <textarea name="address" required rows="3" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"></textarea>
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-gray-700 font-semibold mb-2">City/District *</label>
+                                <input type="text" name="city" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 font-semibold mb-2">Postal Code</label>
+                                <input type="text" name="postalCode" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Information -->
+                <div class="bg-orange-50 p-6 rounded-lg">
+                    <h4 class="font-bold text-orange-800 mb-4">
+                        <i class="fas fa-info-circle mr-2"></i>Additional Information
+                    </h4>
+                    <div class="space-y-4">
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Previous School (if any)</label>
+                            <input type="text" name="previousSchool" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Special Requirements or Medical Conditions</label>
+                            <textarea name="specialRequirements" rows="3" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Terms and Submit -->
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <div class="flex items-center mb-6">
+                        <input type="checkbox" name="terms" required class="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500">
+                        <label class="ml-2 text-gray-700">
+                            I agree to the <a href="#" class="text-blue-600 hover:underline">terms and conditions</a> and <a href="#" class="text-blue-600 hover:underline">privacy policy</a> *
+                        </label>
+                    </div>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button type="button" onclick="closeEnrollmentSection()" class="px-6 py-3 border border-gray-300 rounded-lg hover:bg-gray-50 transition duration-300">
+                            <i class="fas fa-times mr-2"></i>Cancel
+                        </button>
+                        <button type="submit" class="flex-1 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-lg hover:from-blue-700 hover:to-purple-700 transition duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+                            <i class="fas fa-paper-plane mr-2"></i>
+                            <span class="font-semibold">Submit Enrollment Application</span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Enrollment Modal (Hidden - Legacy) -->
+    <div id="enrollmentModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto animate-fade-in">
+            <div class="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-6 rounded-t-2xl">
+                <div class="flex justify-between items-center">
+                    <h3 class="text-2xl font-bold">
+                        <i class="fas fa-graduation-cap mr-2"></i>Enroll at Greenland Academy
+                    </h3>
+                    <button onclick="closeEnrollmentModal()" class="text-white hover:text-gray-200 transition">
+                        <i class="fas fa-times text-2xl"></i>
+                    </button>
+                </div>
+                <p class="mt-2 text-blue-100">Give your child the gift of quality education</p>
+            </div>
+            
+            <form id="enrollmentForm" class="p-6 space-y-6">
+                <!-- Student Information -->
+                <div class="bg-blue-50 p-4 rounded-lg">
+                    <h4 class="font-bold text-blue-800 mb-4">
+                        <i class="fas fa-user-graduate mr-2"></i>Student Information
+                    </h4>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Full Name *</label>
+                            <input type="text" name="studentName" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Date of Birth *</label>
+                            <input type="date" name="dateOfBirth" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Gender *</label>
+                            <select name="gender" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                                <option value="">Select Gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Grade Applying For *</label>
+                            <select name="grade" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                                <option value="">Select Grade</option>
+                                <option value="nursery">Nursery</option>
+                                <option value="lkg">LKG</option>
+                                <option value="ukg">UKG</option>
+                                <option value="1">Class 1</option>
+                                <option value="2">Class 2</option>
+                                <option value="3">Class 3</option>
+                                <option value="4">Class 4</option>
+                                <option value="5">Class 5</option>
+                                <option value="6">Class 6</option>
+                                <option value="7">Class 7</option>
+                                <option value="8">Class 8</option>
+                                <option value="9">Class 9</option>
+                                <option value="10">Class 10</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Parent Information -->
+                <div class="bg-green-50 p-4 rounded-lg">
+                    <h4 class="font-bold text-green-800 mb-4">
+                        <i class="fas fa-users mr-2"></i>Parent/Guardian Information
+                    </h4>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Parent Name *</label>
+                            <input type="text" name="parentName" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Relationship *</label>
+                            <select name="relationship" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                                <option value="">Select Relationship</option>
+                                <option value="father">Father</option>
+                                <option value="mother">Mother</option>
+                                <option value="guardian">Guardian</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Phone Number *</label>
+                            <input type="tel" name="phone" required placeholder="+9779819304211" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Email Address *</label>
+                            <input type="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Address Information -->
+                <div class="bg-purple-50 p-4 rounded-lg">
+                    <h4 class="font-bold text-purple-800 mb-4">
+                        <i class="fas fa-home mr-2"></i>Address Information
+                    </h4>
+                    <div class="space-y-4">
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Complete Address *</label>
+                            <textarea name="address" required rows="3" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"></textarea>
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-gray-700 font-semibold mb-2">City/District *</label>
+                                <input type="text" name="city" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 font-semibold mb-2">Postal Code</label>
+                                <input type="text" name="postalCode" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Information -->
+                <div class="bg-orange-50 p-4 rounded-lg">
+                    <h4 class="font-bold text-orange-800 mb-4">
+                        <i class="fas fa-info-circle mr-2"></i>Additional Information
+                    </h4>
+                    <div class="space-y-4">
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Previous School (if any)</label>
+                            <input type="text" name="previousSchool" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Special Requirements or Notes</label>
+                            <textarea name="notes" rows="3" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Any medical conditions, learning needs, or other important information..."></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Terms and Submit -->
+                <div class="space-y-4">
+                    <div class="flex items-start">
+                        <input type="checkbox" id="terms" name="terms" required class="mt-1 mr-2">
+                        <label for="terms" class="text-gray-700 text-sm">
+                            I agree to the terms and conditions and understand that this is an enrollment inquiry. The school administration will contact me for further information and admission procedures.
+                        </label>
+                    </div>
+                    
+                    <div class="flex gap-4">
+                        <button type="submit" class="flex-1 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition duration-300 transform hover:scale-105">
+                            <i class="fas fa-paper-plane mr-2"></i>Submit Enrollment
+                        </button>
+                        <button type="button" onclick="closeEnrollmentModal()" class="flex-1 bg-gray-200 text-gray-700 px-6 py-3 rounded-lg font-semibold hover:bg-gray-300 transition duration-300">
+                            <i class="fas fa-times mr-2"></i>Cancel
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
